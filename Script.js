@@ -9,7 +9,7 @@ var BBB = ["Tacos", "Kebab curry", "KFC", "Beans on toast"]
 
 var slider = document.getElementByid("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.MR.value; // Display the default slider value
+output.innerHTML = slider.value; // Display the default slider value
 
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
