@@ -43,7 +43,7 @@ function showVideo() {
 
 function Jammin(a){
     if(a == HowJammin){
-        alert("Correct");
+        alert("You got it correct, but the site customaization has not been developed yet, so Skill Issue I guess?");
     }else if(a > HowJammin){
         alert("Too Far (SKill Issue).");
     }else if(a < HowJammin){
