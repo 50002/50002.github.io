@@ -45,9 +45,9 @@ function Jammin(a){
     if(a == HowJammin){
         alert("Correct");
     }else if(a > HowJammin){
-        alert("not yet.");
+        alert("Too Far (SKill Issue).");
     }else if(a < HowJammin){
-        alert("Longer than that");
+        alert("More than that (Thee seemeth to be Lacking in the skill department)");
     }else{
         alert("Nuh uh")
     }
