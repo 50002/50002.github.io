@@ -19,7 +19,8 @@ body{
     text-align: center;
     align-content: center;
     animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 
 table {
