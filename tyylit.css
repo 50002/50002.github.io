@@ -19,7 +19,7 @@ body{
     text-align: center;
     align-content: center;
     animation-name: example;
-    animation-duration: 8s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
