@@ -6,8 +6,15 @@ var foodCount = 18;
 var AAA = ["Rodrigez", "Kabir", "Jamal", "William"] 
 var BBB = ["Tacos", "Kebab curry", "KFC", "Beans on toast"]
 
-/////}
 
+var slider = document.getElementByid("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+} 
 function toggleMute() {
     var video = document.getElementById('Tony');
     if (video.muted) {
