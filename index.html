@@ -46,7 +46,9 @@
 
     <p2>Guess how long he has been jammin?</p2>
     <form name="guesss" onsubmit=Jammin(document.guesss.guess.value)>
-        <input type="number" name="guess">
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
         <input type="submit" value="arvaa">
     </form>
     <script src="Script.js"></script> 
