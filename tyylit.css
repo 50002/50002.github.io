@@ -15,7 +15,7 @@ body{
     padding-right: 460px;
     padding-left: 500px;
     background-color: red;
-    color: rgba(187, 0, 162, 0.842);
+    color: rgb(255, 255, 255);
     text-align: center;
     align-content: center;
     animation-name: example;
