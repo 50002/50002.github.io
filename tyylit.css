@@ -1,0 +1,36 @@
+
+body{
+    padding-right: 460px;
+    padding-left: 500px;
+    background-color: dimgrey;
+    color: aliceblue;
+    text-align: center;
+    align-content: center;
+}
+
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+        
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+        
+tr:nth-child(even) {
+background-color: #686868;
+}
+
+
+
+#Tony::-webkit-media-controls {
+	display: none;
+}
+
+#Tony  {
+  display: none;
+  pointer-events: none;
+}
