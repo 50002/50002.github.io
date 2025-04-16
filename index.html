@@ -1,27 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+ 
 <h1>Jälkiruoka laskuri</h1>
-
-<p>Valitse resepti jonka haluat tehdä. Kun olet valinnut reseptin, anna nettisivulle sinun raaka-aineiden määrän ja nettisivu laskee kuinka monta herkullista herkkua sinä voit tehdä.</p>
-
-<form>
-  <label for="cars">Valitse resepti:</label>
-  <select name="cars" id="cars">
-    <option value="letut">Letut</option>
-    <option value="keksit">Kaurakeksit</option>
-    <option value="ritarit">Köyhät ritatit</option>
-  </select>
-</form>
-<button onclick="myFunction()">Click me</button>
-
-<p><ol id="demo"></ol></p>
+<h2>Hei haluatko sinä helpon tavan nähdä millaisia jälkiruokia pystyt tekemään sinulla olevilla aineksilla, no meillä on sinulle vastaus nyt uusi jälkiruoka laskuri jossa valitset reseptin jonka haluat tehdä ja annat ainesosiesi määrän ja annamme sinulle ohjeet tehdä nämä herkulliset jälkiruuat ja annamme sinulle myös määrän mitä voit tehdä näitä jälkiruokia sinulla löytyvillä ainesosilla.</h2>
+<h2>Valitse resepti jonka haluat tehdä. Kun olet valinnut reseptin, anna nettisivulle sinun raaka-aineiden määrän ja nettisivu laskee kuinka monta herkullista herkkua sinä voit tehdä.</h2>
+ 
+ 
+<div id="div1">
+  <form>
+    <label for="cars" >Valitse resepti:</label>
+    <select name="cars" id="cars" onchange="myFunction()">
+      <option disabled selected value> -- Valitse -- </option>
+      <option value="letut">Letut</option>
+      <option value="keksit">Kaurakeksit</option>
+      <option value="ritarit">Latte ritatit</option>
+    </select>
+  </form>
+</div>
+ 
+<div id="div2">
+  <p id="divi2"></p>
+</div>
+ 
+ <!--
+<div id="div3">
+  <p>Lisää tähän anesosat joita sinulta löytyy jotta voimme ehdottaa reseptejä.</p>
+  <form></form>
+    <p id="aines11"></p>
+    <input type="number" id="aines11" name="aines11"><br>
+    <p id="aines22"></p>
+    <input type="number" id="aines22" name="aines22"><br>
+    <p id="aines33"></p>
+    <input type="number" id="aines33" name="aines33"><br>
+    <p id="aines44"></p>
+    <input type="number" id="aines44" name="aines44"><br>
+    <p id="aines55"></p>
+    <input type="number" id="aines55" name="aines55"><br>
+    <p id="aines66"></p>
+    <input type="number" id="aines66" name="aines66"><br>
+    <p id="aines77"></p>
+    <input type="number" id="aines77" name="aines77"><br>
+    <p id="aines88"></p>
+    <input type="number" id="aines88" name="aines88"><br>
+  </form><br><br>
+  <p id="divi3"></p>
+</div>
+ !--->
+ 
+<div id="div4">
+  <p>Lisää tarvittavien ainesten määrät.</p>
+  <form class="form" id="yes">
+    <p id="aines01">lisää voin määrä grammoina.</p>
+    <input type="number" id="aines1" name="aines1" onchange="Laskin()">
+ 
+    <p id="aines21">lisää sokerin määrä grammoina.</p>
+    <input type="number" id="aines2" name="aines2" onchange="Laskin()">
+ 
+    <p id="aines31">lisää kuinka monta kananmunaa.</p>
+    <input type="number" id="aines3" name="aines3" onchange="Laskin()">
+ 
+    <p id="aines41">lisää vaniljasokerin määrä grammoina.</p>
+    <input type="number" id="aines4" name="aines4" onchange="Laskin()">
+ 
+    <p id="aines51">lisää kaneli määrä grammoina.</p>
+    <input type="number" id="aines5" name="aines5" onchange="Laskin()">
+ 
+    <p id="aines61">lisää kaurahiutaleiden määrä grammoina.</p>
+    <input type="number" id="aines6" name="aines6" onchange="Laskin()">
+ 
+    <p id="aines71">lisää vehnäjauhon määrä grammoina.</p>
+    <input type="number" id="aines7" name="aines7" onchange="Laskin()">
+ 
+    <p id="aines81">lisää leivinjauheen määrä grammoina.</p>
+    <input type="number" id="aines8" name="aines8" onchange="Laskin()">
+ 
+    <p id="aines91">lisää maidon määrä litroina.</p>
+    <input type="number" id="aines9" name="aines9" onchange="Laskin()">
+ 
+    <p id="aines101">lisää suolan määrä grammoina.</p>
+    <input type="number" id="aines10" name="aines10" onchange="Laskin()">
+ 
+    <p id="aines111">lisää latte kahvi juoman määrä desilitroina.</p>
+    <input type="number" id="aines11" name="aines11" onchange="Laskin()">
+ 
+    <p id="aines121">lisää pullan määrä grammoina.</p>
+    <input type="number" id="aines12" name="aines12" onchange="Laskin()">
+  </form>
+ 
+  <p id="maara"></p>
+ 
+</div>
+ 
+<div id="div5">
+  <p id="demo"></p>
+</div>
+ 
+<img src="kuva .jpg" alt="Kaurakeksit" class="keksikuva" id="keksikuva">
+<img src="kuva (1).jpg" alt="Latte ritarit" class="ritarikuva" id="ritarikuva">
+<img src="kuva(2).jpg" alt="Letut" class="lettukuva" id="lettukuva">
+ 
+ 
 <script src="Scripts.js"></script>
-
-
 </body>
 </html>
