@@ -1,6 +1,115 @@
-.p {
-    font-family: "Times New Roman", Times, serif;
-  }
-.h1 {
-    font-family: "Times New Roman", Times, serif;
-  }
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: white;
+}
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  color: white;
+}
+ 
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 64px;
+  color: white;
+}
+ 
+form {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 32px;
+}
+ 
+#yes{
+  display: none;
+}
+ 
+body {
+  background-color: black;
+}
+ 
+#div1 {
+  background-color: rgb(65, 64, 64);
+  width: 300px;
+  height: 150px;
+  border: 10px solid white;
+  padding: 50px;
+  margin: 20px;
+  position: relative;
+  top: 50px;
+}
+ 
+#div2 {
+  background-color: rgb(65, 64, 64);
+  width: 300px;
+  height: 150px;
+  border: 10px solid white;
+  padding: 50px;
+  margin: 20px;
+  position: relative;
+  top: -240px;
+  left: 410px;
+}
+ 
+#div3 {
+background-color: rgb(65, 64, 64);
+width: 300px;
+height: 500px;
+border: 10px solid white;
+padding: 50px;
+margin: 20px;
+position: relative;
+top: -430px;
+left: 1000px;
+}
+ 
+#div4 {
+background-color: rgb(65, 64, 64);
+width: 300px;
+height: 1050px;
+border: 10px solid white;
+padding: 50px;
+margin: 20px;
+position: relative;
+top: -190px;
+}
+ 
+#div5 {
+background-color: rgb(65, 64, 64);
+width: 300px;
+height: 1050px;
+border: 10px solid white;
+padding: 50px;
+margin: 20px;
+position: relative;
+top: -1380px;
+left: 410px;
+}
+ 
+#keksikuva {
+width: 400px;
+height: 250px;
+position: relative;
+top: -2900px;
+left: 440px;
+visibility: hidden;
+}
+ 
+#lettukuva {
+width: 400px;
+height: 250px;
+position: relative;
+top: -2900px;
+left: -368px;
+visibility: hidden;
+}
+ 
+#ritarikuva {
+width: 400px;
+height: 250px;
+position: relative;
+top: -2900px;
+left: 36px;
+visibility: hidden;
+}
